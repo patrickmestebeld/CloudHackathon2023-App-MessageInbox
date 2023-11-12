@@ -1,0 +1,47 @@
+﻿@model MessageListViewModel
+
+@{
+    ViewData["Title"] = "Berichten Box";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welkom bij de Toeslagen Hackathon</h1>
+    <p>Overzicht van berichten in de inbox</p>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Home" asp-action="Index" method="get">
+            <button type="submit" class="btn btn-primary">Ververs</button>
+        </form>
+    </div>
+    <div>
+        <hr/>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>@Html.DisplayNameForInnerType((MessageViewModel m) => m.Subject)</th>
+                <th>@Html.DisplayNameForInnerType((MessageViewModel m) => m.MessageType)</th>
+                <th>@Html.DisplayNameForInnerType((MessageViewModel m) => m.Url)</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Messages!)
+            {
+                <tr>
+                    <td>
+                        @item.Subject
+                    </td>
+                    <td>
+                        @item.MessageType
+                    </td>
+                    <td>
+                        <a href="@item.Url" target="_blank">Download</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

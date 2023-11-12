@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerichtenBox", "src\Apps\BerichtenBox\BerichtenBox.csproj", "{AD8FD326-158E-4D31-ADA7-84BA4159ED8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BerichtenBox.Infra", "src\Apps\BerichtenBox.Infra\BerichtenBox.Infra.csproj", "{D662B9A1-CA7C-467B-BAB4-8BFA99B0CC8B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD8FD326-158E-4D31-ADA7-84BA4159ED8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8FD326-158E-4D31-ADA7-84BA4159ED8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8FD326-158E-4D31-ADA7-84BA4159ED8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8FD326-158E-4D31-ADA7-84BA4159ED8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D662B9A1-CA7C-467B-BAB4-8BFA99B0CC8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D662B9A1-CA7C-467B-BAB4-8BFA99B0CC8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D662B9A1-CA7C-467B-BAB4-8BFA99B0CC8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D662B9A1-CA7C-467B-BAB4-8BFA99B0CC8B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {408D005F-E3DE-49B5-A703-B62F2828F049}
+	EndGlobalSection
+EndGlobal
